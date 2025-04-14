@@ -1,0 +1,505 @@
+   <!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF
+8"> 
+    <meta name="viewport" 
+content="width=device
+width, initial-scale=1.0"> 
+    <title>Crossword 
+Bookstore</title> 
+    <link rel="stylesheet" 
+href="styles.css"> 
+    <style> 
+        body { 
+            font-family: Arial, 
+sans-serif; 
+            background-color: 
+15  
+#f4f4f4; 
+            margin: 0; 
+            padding: 0; 
+            color: #333; 
+        } 
+ 
+        header { 
+             
+ 
+      background-color: 
+#ffcc00; 
+            padding: 20px; 
+            text-align: center; 
+        } 
+ 
+        .logo img { 
+            max-width: 150px;  
+        } 
+ 
+        nav ul { 
+            list-style: none; 
+            padding: 0; 
+        } 
+ 
+        nav ul li { 
+            display: inline; 
+            margin: 0 15px; 
+        } 
+ 
+        nav ul li a { 
+            text-decoration: 
+none; 
+            color: #333; 
+            font-weight: bold; 
+        } 
+ 
+        nav ul li a:hover { 
+            color: #ff6600;  
+        } 
+ 
+        main { 
+            padding: 20px; 
+            max-width: 
+1200px; 
+            margin: auto; 
+            background-color: 
+#fff; 
+16  
+            border-radius: 8px; 
+            box-shadow: 0 2px 
+10px rgba(0, 0, 0, 0.1); 
+        } 
+ 
+        h1, h2 { 
+            color: #ff6600;  
+        } 
+ 
+        .book-list { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: 
+space-between; 
+        } 
+ 
+        .book-item { 
+            background-color: 
+#f9f9f9; 
+            border: 1px solid 
+#ddd; 
+            border-radius: 5px; 
+            padding: 15px; 
+            margin: 10px; 
+            width: calc(30% - 
+20px);  
+            box-shadow: 0 2px 
+5px  
+ 
+ 
+rgba(0, 0, 0, 0.1); 
+            transition: 
+transform 0.2s; 
+        } 
+ 
+        .book-item:hover { 
+            transform: 
+scale(1.05);  
+        } 
+ 
+        .book-item img { 
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 5px; 
+        } 
+ 
+        .about-us, .contact-us 
+17  
+{ 
+            margin-top: 40px; 
+            padding: 20px; 
+            background-color: 
+#f9f9f9; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 
+10px rgba(0, 0, 0, 0.1); 
+        } 
+ 
+        footer { 
+            text-align: center; 
+            padding: 20px; 
+            background-color: 
+#ffcc00; 
+            position: relative; 
+            bottom: 0; 
+            width: 100%; 
+        } 
+ 
+        form { 
+            display: flex; 
+            flex-direction: 
+column; 
+        } 
+ 
+        label { 
+            margin: 10px 0 5px; 
+        } 
+ 
+        input, textarea { 
+            padding: 10px; 
+            margin-bottom: 
+15px; 
+            border: 1px solid 
+#ddd; 
+            border-radius: 5px; 
+        } 
+ 
+        button { 
+            background-color: 
+#ff6600; 
+            color: white; 
+            border: none; 
+            padding: 10px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+18  
+            transition: 
+background-color 0.3s; 
+         
+ 
+} 
+ 
+        button:hover { 
+            background-color: 
+#e65c00;  
+        } 
+ 
+        @media (max-width: 
+768px) { 
+            .book-item { 
+                width: calc(48% - 20px); 
+            } 
+        } 
+ 
+        @media (max-width: 
+480px) { 
+            .book-item { 
+                width: 100%; 
+            } 
+        } 
+    </style> 
+</head> 
+<body> 
+    <header> 
+        <div class="logo"> 
+            <img 
+src="logo.png" 
+alt="Crossword Bookstore 
+Logo"> 
+        </div> 
+        <nav> 
+            <ul> 
+<li><a 
+href="#home">Home</a>
+ </li> 
+<li><a 
+href="#books">Books</a>
+ </li> 
+<li><a 
+href="#about">About 
+Us</a></li> 
+<li><a 
+19  
+href="#contact">Contact</
+ a></li> 
+</ul> 
+</nav> 
+</header> 
+ 
+<main> 
+<section class="hero" 
+id="home"> 
+<h1>Welcome to 
+Crossword 
+Bookstore</h1> 
+<p>Your one-stop shop for 
+books, stationery, and 
+more.</p> 
+</section> 
+ 
+<section class="featured
+books" id="books"> 
+<h2>Featured Books</h2> 
+<div class="book-list"> 
+<!-- Book Item --> 
+<div class="book-item"> 
+<img src="book1.jpg" 
+alt="The Great Gatsby"> 
+ 
+ 
+<h3>The Great 
+Gatsby</h3> 
+<p>F. Scott Fitzgerald</p> 
+<p>Price: $10.99</p> 
+</div> 
+<div class="book-item"> 
+<img src="book2.jpg" 
+alt="To Kill a 
+Mockingbird"> 
+<h3>To Kill a 
+Mockingbird</h3> 
+<p>Harper Lee</p> 
+<p>Price: $12.99</p> 
+</div> 
+<div class="book-item"> 
+                    <img 
+src="book3.jpg" 
+alt="1984"> 
+                    
+<h3>1984</h3> 
+20  
+                    <p>George 
+Orwell</p> 
+                    <p>Price: 
+$14.99</p> 
+                </div> 
+                <div 
+class="book-item"> 
+                    <img 
+src="book4.jpg" alt="Pride 
+and Prejudice"> 
+                    <h3>Pride and 
+Prejudice</h3> 
+                    <p>Jane 
+Austen</p> 
+                    <p>Price: 
+$11.99</p> 
+                </div> 
+                <div 
+class="book-item"> 
+                    <img 
+src="book5.jpg" alt="The 
+Catcher in the Rye"> 
+                    <h3>The 
+Catcher in the Rye</h3> 
+                    <p>J.D. 
+Salinger</p> 
+                    <p>Price: 
+$13.99</p> 
+                </div> 
+            </div> 
+ 
+            <section 
+class="book-categories"> 
+                <h2>Book 
+Categories</h2> 
+                <ul> 
+                    <li><a 
+href="#fiction">Fiction</a
+ ></li> 
+                    <li><a 
+href="#non-fiction">Non
+Fiction</a></li> 
+                    <li><a 
+href="#children">Children
+ 's Books</a></li> 
+                    <li><a 
+href="#academic">Acade
+21  
+mic</a></li> 
+                </ul> 
+            </section> 
+ 
+            <section 
+class="book-list"  
+ 
+ 
+id="fiction"> 
+                
+<h2>Fiction</h2> 
+                <div 
+class="book-item"> 
+                    <img 
+src="book6.jpg" alt="The 
+Alchemist"> 
+                    <h3>The 
+Alchemist</h3> 
+                    <p>Paulo 
+Coelho</p> 
+                    <p>Price: 
+$15.99</p> 
+                </div> 
+                <div 
+class="book-item"> 
+                    <img 
+src="book7.jpg" alt="The 
+Hobbit"> 
+                    <h3>The 
+Hobbit</h3> 
+                    <p>J.R.R. 
+Tolkien</p> 
+                    <p>Price: 
+$16.99</p> 
+                </div> 
+            </section> 
+ 
+            <section 
+class="book-list" id="non
+fiction"> 
+                <h2>Non
+Fiction</h2> 
+                <div 
+class="book-item"> 
+                    <img 
+src="book8.jpg" 
+alt="Sapiens: A Brief 
+22  
+History of Humankind"> 
+                    <h3>Sapiens: 
+A Brief History of 
+Humankind</h3> 
+                    <p>Yuval 
+Noah Harari</p> 
+                    <p>Price: 
+$18.99</p> 
+                </div> 
+                <div 
+class="book-item"> 
+                    <img 
+src="book9.jpg" 
+alt="Educated"> 
+                    
+<h3>Educated</h3> 
+                    <p>Tara 
+Westover</p> 
+                    <p>Price: 
+$16.99</p> 
+                </div> 
+            </section> 
+ 
+            <section 
+class="book-list" 
+id="children"> 
+                <h2>Children's 
+Books</h2> 
+                <div 
+class="book-item"> 
+                    <img 
+src="book10.jpg" 
+alt="Harry Potter and the 
+Sorcerer's Stone"> 
+                    <h3>Harry 
+Potter and  
+ 
+ 
+the Sorcerer's Stone</h3> 
+                    <p>J.K. 
+Rowling</p> 
+                    <p>Price: 
+$9.99</p> 
+                </div> 
+                <div 
+class="book-item"> 
+                    <img 
+23  
+src="book11.jpg" alt="The 
+Very Hungry Caterpillar"> 
+                    <h3>The Very 
+Hungry Caterpillar</h3> 
+                    <p>Eric 
+Carle</p> 
+                    <p>Price: 
+$7.99</p> 
+                </div> 
+            </section> 
+ 
+            <section 
+class="book-list" 
+id="academic"> 
+                
+<h2>Academic</h2> 
+                <div 
+class="book-item"> 
+                    <img 
+src="book12.jpg" 
+alt="Introduction to 
+Algorithms"> 
+                    
+<h3>Introduction to 
+Algorithms</h3> 
+                    <p>Thomas 
+H. Cormen</p> 
+                    <p>Price: 
+$49.99</p> 
+                </div> 
+                <div 
+class="book-item"> 
+                    <img 
+src="book13.jpg" alt="The 
+Elements of Statistical 
+Learning"> 
+                    <h3>The 
+Elements of Statistical 
+Learning</h3> 
+                    <p>Trevor 
+Hastie</p> 
+                    <p>Price: 
+$59.99</p> 
+                </div> 
+            </section> 
+        </section> 
+ 
+24  
+       <section class="about
+us" id="about"> 
+            <h2>About 
+Us</h2> 
+            <p>Established in 
+1992, Crossword 
+Bookstore has been a haven 
+for book lovers, offering a 
+vast collection of books 
+across various genres. Our 
+mission is to promote 
+reading culture and provide 
+a space where readers can 
+explore and discover.</p> 
+        </section> 
+ 
+        <section 
+class="contact-us"  
+ 
+ 
+id="contact"> 
+            <h2>Contact 
+Us</h2> 
+            <form 
+action="submit_form.php" 
+method="post"> 
+                <label 
+for="name">Name:</label
+ > 
+                <input 
+type="text" id="name" 
+name="name" required> 
+ 
+                <label  
+ 
+ 
+for="email">Email:</label
+ > 
+                <input 
+type="email" id="email" 
+name="email" required> 
+ 
+                <label 
+for="message">Message:<
+ /label> 
+                <textarea 
+id="message"  
+25  
+name="message" 
+required></textarea> 
+ 
+                <button 
+type="submit">Send 
+Message</button> 
+            </form> 
+</section> 
